@@ -1,0 +1,111 @@
+@import url(https://db.onlinewebfonts.com/c/b9561c58f8199daedf9095bf03ae7917?family=Franklin+Gothic+ATF+Regular);
+.modal {
+  padding: 20px 0;
+  border: 0;
+  max-width: 450px;
+  width: 100%;
+  background-color: #F2F2F2;
+}
+.modal::backdrop {
+  background: rgba(100, 111, 121, 0.8);
+}
+.modal[open], .modal::backdrop {
+  animation: show 500ms ease;
+}
+.modal__body {
+  width: 90%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.modal__heading {
+  display: flex;
+}
+.modal__heading h1 {
+  margin-left: 0.8rem;
+  margin-top: 0.4rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.modal__footer .buttons {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  margin-top: 0.5rem;
+  gap: 5px;
+}
+.modal__footer .buttons button {
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Franklin Gothic ATF Regular", sans-serif;
+  cursor: pointer;
+}
+.modal__footer .buttons .cancel__btn {
+  border: 2px solid rgb(85, 85, 85);
+  color: #777;
+}
+.modal__footer .buttons .continue__btn {
+  border: none;
+  background-color: #203240;
+  color: #fff;
+}
+.modal__text p {
+  margin-top: 0;
+  color: #777;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+@media (min-width: 672px) {
+  .modal {
+    max-width: 750px;
+    overflow-x: hidden;
+  }
+  .modal__body {
+    margin: 2.5rem;
+  }
+  .modal__heading h1 {
+    margin-bottom: 1.8rem;
+  }
+  .modal__text p {
+    margin-bottom: 1.7rem;
+  }
+  .modal__footer .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .modal__footer .buttons button {
+    padding: 0.8rem 5rem;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  max-width: 800px;
+  height: 100vh;
+}
+
+.open__button {
+  padding: 15px 45px;
+  border: none;
+  outline: none;
+  color: #203240;
+  background: #fff100;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: "Franklin Gothic ATF Regular", sans-serif;
+  text-align: center;
+}
+.open__button i {
+  margin-left: 1.2rem;
+}
+.open__button:hover {
+  cursor: pointer;
+  background: #ecc70c;
+}/*# sourceMappingURL=style.css.map */

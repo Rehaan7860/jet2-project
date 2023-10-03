@@ -1,0 +1,12 @@
+{
+  "name": "jet2-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Rehaan Rafiq",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2"
+  }
+}
